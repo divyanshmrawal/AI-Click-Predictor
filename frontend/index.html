@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Click Predictor - AI Powered</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="icon">🎯</span>
+                <h1>Ad Click Predictor</h1>
+            </div>
+            <p class="subtitle">AI-Powered Advertisement Click Prediction</p>
+        </header>
+
+        <!-- Main Card -->
+        <div class="card">
+            <h2>Enter User Information</h2>
+            
+            <form id="predictionForm">
+                <!-- Age Input -->
+                <div class="input-group">
+                    <label for="age">
+                        <span class="label-icon">👤</span>
+                        Age
+                    </label>
+                    <input type="number" id="age" name="age" placeholder="e.g., 35" required min="1" max="120">
+                </div>
+
+                <!-- Daily Time Spent Input -->
+                <div class="input-group">
+                    <label for="dailyTime">
+                        <span class="label-icon">⏱️</span>
+                        Daily Time Spent on Site (minutes)
+                    </label>
+                    <input type="number" id="dailyTime" name="dailyTime" placeholder="e.g., 60.5" required step="0.1" min="0">
+                </div>
+
+                <!-- Area Income Input -->
+                <div class="input-group">
+                    <label for="income">
+                        <span class="label-icon">💰</span>
+                        Area Income ($)
+                    </label>
+                    <input type="number" id="income" name="income" placeholder="e.g., 65000" required step="0.01" min="0">
+                </div>
+
+                <!-- Daily Internet Usage Input -->
+                <div class="input-group">
+                    <label for="internetUsage">
+                        <span class="label-icon">🌐</span>
+                        Daily Internet Usage (minutes)
+                    </label>
+                    <input type="number" id="internetUsage" name="internetUsage" placeholder="e.g., 200" required step="0.1" min="0">
+                </div>
+
+                <!-- Gender Selection -->
+                <div class="input-group">
+                    <label>
+                        <span class="label-icon">⚧️</span>
+                        Gender
+                    </label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="1" required>
+                            <span class="radio-custom">Male</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="0" required>
+                            <span class="radio-custom">Female</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-predict" id="predictBtn">
+                    <span class="btn-text">Predict Click Probability</span>
+                    <span class="btn-icon">🚀</span>
+                </button>
+            </form>
+        </div>
+
+        <!-- Results Card (Hidden by default) -->
+        <div class="results-card" id="resultsCard" style="display: none;">
+            <h2>Prediction Results</h2>
+            
+            <div class="result-main" id="resultMain">
+                <!-- Result will be inserted here -->
+            </div>
+
+            <div class="probability-bars">
+                <div class="prob-item">
+                    <div class="prob-label">
+                        <span>❌ Will NOT Click</span>
+                        <span id="probNoClick" class="prob-value">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill no-click" id="barNoClick"></div>
+                    </div>
+                </div>
+
+                <div class="prob-item">
+                    <div class="prob-label">
+                        <span>✅ Will Click</span>
+                        <span id="probClick" class="prob-value">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill yes-click" id="barClick"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-reset" onclick="resetForm()">
+                Make Another Prediction
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Powered by Machine Learning & FastAPI</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
