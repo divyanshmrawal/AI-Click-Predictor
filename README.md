@@ -247,7 +247,7 @@ Contributions are welcome! Feel free to:
 
 **Divyansh Rawal**
 
-- GitHub ID : [GitHub](https://github.com/divyanshmrawal)
+- GitHub ID : [GitHub](https://www.linkedin.com/in/divyanshmrawal)
 - LinkedIn ID : [LinkedIn](www.linkedin.com/in/divyanshmrawal)
 
 ⭐ **If you found this project helpful, please give it a star!** ⭐
