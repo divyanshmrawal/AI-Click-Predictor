@@ -139,8 +139,8 @@ The application uses **Logistic Regression** trained on advertising data with th
 
 ### Frontend
 
-- **HTML5** - Structure
-- **CSS3** - Styling with gradients, animations, and glassmorphism
+- **HTML** - Structure
+- **CSS** - Styling with gradients, animations, and glassmorphism
 - **Vanilla JavaScript** - API communication and DOM manipulation
 - **Google Fonts (Inter)** - Modern typography
 
@@ -243,30 +243,11 @@ Contributions are welcome! Feel free to:
 - Suggest new features
 - Submit pull requests
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## 👨‍💻 Author
 
-**Your Name**
+**Divyansh Rawal**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-
-## 🙏 Acknowledgments
-
-- Dataset from Kaggle/UCI Machine Learning Repository
-- Inspired by modern web design trends
-- Built with guidance from AI mentorship
-
-## 📞 Support
-
-If you have any questions or need help:
-
-- Open an issue on GitHub
-- Contact: your-email@example.com
-
----
+- GitHub ID : [GitHub](https://github.com/divyanshmrawal)
+- LinkedIn ID : [LinkedIn](www.linkedin.com/in/divyanshmrawal)
 
 ⭐ **If you found this project helpful, please give it a star!** ⭐
