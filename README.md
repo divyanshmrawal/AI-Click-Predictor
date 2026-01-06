@@ -19,12 +19,10 @@ A beautiful full-stack web application that predicts whether a user will click o
 ## 📸 Screenshots
 
 ### Homepage
-
-![Homepage](screenshots/homepage.png)
+<img width="1892" height="863" alt="Screenshot 2026-01-06 120115" src="https://github.com/user-attachments/assets/44943840-5599-42c1-adc3-94294710794e" />
 
 ### Prediction Results
-
-![Results](screenshots/results.png)
+<img width="662" height="528" alt="Screenshot 2026-01-06 120247" src="https://github.com/user-attachments/assets/33dd94a2-5644-4a3f-812b-558396f9f293" />
 
 ## 🏗️ Project Structure
 
