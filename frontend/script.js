@@ -1,10 +1,4 @@
-/* ══════════════════════════════════════
-   AdSense AI — Click Predictor
-   script.js — Frontend Logic & API
-   Backend: FastAPI at http://127.0.0.1:8000
-   ══════════════════════════════════════ */
 
-// ── State ──────────────────────────────
 let selectedGender = 0; // 0 = Female, 1 = Male
 
 // ── Gender Toggle ───────────────────────
