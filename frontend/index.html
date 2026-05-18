@@ -1,131 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ad Click Predictor - AI Powered</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdSense AI — Click Predictor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <div class="logo">
-                <span class="icon">🎯</span>
-                <h1>Ad Click Predictor</h1>
-            </div>
-            <p class="subtitle">AI-Powered Advertisement Click Prediction</p>
-        </header>
 
-        <!-- Main Card -->
-        <div class="card">
-            <h2>Enter User Information</h2>
-            
-            <form id="predictionForm">
-                <!-- Age Input -->
-                <div class="input-group">
-                    <label for="age">
-                        <span class="label-icon">👤</span>
-                        Age
-                    </label>
-                    <input type="number" id="age" name="age" placeholder="e.g., 35" required min="1" max="120">
-                </div>
+  <!-- ══ HEADER ══ -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-mark">AdSense AI</span>
+        <span class="logo-tag">Click Predictor</span>
+      </div>
+      <div class="header-badge">
+        <span class="pulse-dot"></span>
+        Model Active
+      </div>
+    </div>
+  </header>
 
-                <!-- Daily Time Spent Input -->
-                <div class="input-group">
-                    <label for="dailyTime">
-                        <span class="label-icon">⏱️</span>
-                        Daily Time Spent on Site (minutes)
-                    </label>
-                    <input type="number" id="dailyTime" name="dailyTime" placeholder="e.g., 60.5" required step="0.1" min="0">
-                </div>
-
-                <!-- Area Income Input -->
-                <div class="input-group">
-                    <label for="income">
-                        <span class="label-icon">💰</span>
-                        Area Income ($)
-                    </label>
-                    <input type="number" id="income" name="income" placeholder="e.g., 65000" required step="0.01" min="0">
-                </div>
-
-                <!-- Daily Internet Usage Input -->
-                <div class="input-group">
-                    <label for="internetUsage">
-                        <span class="label-icon">🌐</span>
-                        Daily Internet Usage (minutes)
-                    </label>
-                    <input type="number" id="internetUsage" name="internetUsage" placeholder="e.g., 200" required step="0.1" min="0">
-                </div>
-
-                <!-- Gender Selection -->
-                <div class="input-group">
-                    <label>
-                        <span class="label-icon">⚧️</span>
-                        Gender
-                    </label>
-                    <div class="radio-group">
-                        <label class="radio-label">
-                            <input type="radio" name="gender" value="1" required>
-                            <span class="radio-custom">Male</span>
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="gender" value="0" required>
-                            <span class="radio-custom">Female</span>
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Submit Button -->
-                <button type="submit" class="btn-predict" id="predictBtn">
-                    <span class="btn-text">Predict Click Probability</span>
-                    <span class="btn-icon">🚀</span>
-                </button>
-            </form>
-        </div>
-
-        <!-- Results Card (Hidden by default) -->
-        <div class="results-card" id="resultsCard" style="display: none;">
-            <h2>Prediction Results</h2>
-            
-            <div class="result-main" id="resultMain">
-                <!-- Result will be inserted here -->
-            </div>
-
-            <div class="probability-bars">
-                <div class="prob-item">
-                    <div class="prob-label">
-                        <span>❌ Will NOT Click</span>
-                        <span id="probNoClick" class="prob-value">0%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill no-click" id="barNoClick"></div>
-                    </div>
-                </div>
-
-                <div class="prob-item">
-                    <div class="prob-label">
-                        <span>✅ Will Click</span>
-                        <span id="probClick" class="prob-value">0%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill yes-click" id="barClick"></div>
-                    </div>
-                </div>
-            </div>
-
-            <button class="btn-reset" onclick="resetForm()">
-                Make Another Prediction
-            </button>
-        </div>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <p>Powered by Machine Learning & FastAPI</p>
-        </footer>
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1 class="hero-title">Predict<br/>Ad <em>Click</em><br/>Probability</h1>
+      <p class="hero-desc">
+        Feed in demographic and behavioral signals. Get a precision-scored prediction
+        on whether a user will click your advertisement.
+      </p>
     </div>
 
-    <script src="script.js"></script>
+    <div class="hero-visual">
+      <div class="feature-card">
+        <div class="feature-icon"></div>
+        <div class="feature-text">
+          <h4>Real-Time Inference</h4>
+          <p>FastAPI backend returns predictions in milliseconds — no polling, no delay.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"></div>
+        <div class="feature-text">
+          <h4>Probability Scores</h4>
+          <p>Both click and no-click probabilities so you understand confidence, not just the verdict.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"></div>
+        <div class="feature-text">
+          <h4>Behavioral Signals</h4>
+          <p>Model trained on real advertising data — demographics, time spent, income, internet usage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"><hr /></div>
+
+  <!-- ══ FORM ══ -->
+  <section class="form-section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Enter User Data</h2>
+    </div>
+
+    <div class="form-grid">
+
+      <div class="field-group">
+        <label class="field-label" for="age">Age</label>
+        <p class="field-desc">User's age in years</p>
+        <input class="field-input" type="number" id="age" placeholder="35" min="18" max="100" />
+        <span class="field-unit">YRS</span>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="daily_time">Daily Time on Site</label>
+        <p class="field-desc">Average minutes per day on the platform</p>
+        <input class="field-input" type="number" id="daily_time" placeholder="60.5" min="0" step="0.1" />
+        <span class="field-unit">MIN</span>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="area_income">Area Income</label>
+        <p class="field-desc">Average income of user's region</p>
+        <input class="field-input" type="number" id="area_income" placeholder="65000" min="0" />
+        <span class="field-unit">USD</span>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="internet_usage">Daily Internet Usage</label>
+        <p class="field-desc">Total internet minutes consumed per day</p>
+        <input class="field-input" type="number" id="internet_usage" placeholder="200" min="0" />
+        <span class="field-unit">MIN</span>
+      </div>
+
+      <div class="field-group field-group--full">
+        <label class="field-label">Gender</label>
+        <p class="field-desc">User's self-reported gender</p>
+        <div class="gender-toggle">
+          <button class="gender-option active" id="btn-female" onclick="setGender(0)">Female</button>
+          <button class="gender-option" id="btn-male" onclick="setGender(1)">Male</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="submit-row">
+      <button class="btn-predict" id="predictBtn" onclick="predict()">
+        Run Prediction
+        <span class="btn-icon">→</span>
+      </button>
+      <div class="loading-bar" id="loadingBar"></div>
+      <span class="btn-note" id="btnNote">All fields required</span>
+    </div>
+
+    <div class="error-msg" id="errorMsg"></div>
+  </section>
+
+  <!-- ══ RESULT ══ -->
+  <section id="result-section">
+    <div class="section-divider" style="margin-bottom: 40px;"><hr /></div>
+
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Prediction Result</h2>
+    </div>
+
+    <div class="result-card">
+
+      <div class="result-verdict">
+        <div>
+          <div class="verdict-label">Model Verdict</div>
+          <div class="verdict-text" id="verdictText">—</div>
+        </div>
+        <div class="verdict-score">
+          <div class="score-big" id="scoreClick">—</div>
+          <div class="score-unit">% click</div>
+        </div>
+      </div>
+
+      <div class="result-probabilities">
+        <div class="prob-item">
+          <div class="prob-header">
+            <span class="prob-label">Will Click</span>
+            <span class="prob-value" id="probClickVal">—%</span>
+          </div>
+          <div class="prob-bar-track">
+            <div class="prob-bar-fill" id="barClick"></div>
+          </div>
+        </div>
+        <div class="prob-item">
+          <div class="prob-header">
+            <span class="prob-label">Will Not Click</span>
+            <span class="prob-value" id="probNoClickVal">—%</span>
+          </div>
+          <div class="prob-bar-track">
+            <div class="prob-bar-fill" id="barNoClick"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-insight">
+        <div class="insight-icon" id="insightIcon"></div>
+        <div class="insight-text">
+          <h4 id="insightTitle">Analysis</h4>
+          <p id="insightBody">Insight will appear here after prediction.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-tech">
+        <span class="tech-pill">FastAPI</span>
+        <span class="tech-pill">Logistic Regression</span>
+        <span class="tech-pill">scikit-learn</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
