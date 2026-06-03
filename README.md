@@ -1,4 +1,4 @@
-# 🎯 Ad Click Predictor - Full Stack AI Application
+# 🎯 Ad Click Predictor -
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1-green)
