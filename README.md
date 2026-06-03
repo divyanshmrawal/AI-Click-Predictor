@@ -1,13 +1,13 @@
-# 🎯 Ad Click Predictor -
+# Ad Click Predictor 
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1-green)
 ![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-A beautiful full-stack web application that predicts whether a user will click on an advertisement based on their demographic and behavioral data. Powered by Machine Learning (Logistic Regression) with a modern, responsive frontend.
+A web application that predicts whether a user will click on an advertisement based on their behavioral data. using Machine Learning (Logistic Regression) with responsive frontend.
 
-## 🌟 Features
+## Features
 
 - **AI-Powered Predictions**: Uses a trained Logistic Regression model to predict ad click probability
 - **Beautiful UI**: Modern, gradient-based design with smooth animations
@@ -16,7 +16,7 @@ A beautiful full-stack web application that predicts whether a user will click o
 - **RESTful API**: FastAPI backend with automatic documentation
 - **Interactive**: User-friendly form with validation and error handling
 
-## 📸 Screenshots
+## Screenshots
 
 ### Homepage
 <img width="1892" height="863" alt="Screenshot 2026-01-06 120115" src="https://github.com/user-attachments/assets/44943840-5599-42c1-adc3-94294710794e" />
@@ -24,7 +24,7 @@ A beautiful full-stack web application that predicts whether a user will click o
 ### Prediction Results
 <img width="662" height="528" alt="Screenshot 2026-01-06 120247" src="https://github.com/user-attachments/assets/33dd94a2-5644-4a3f-812b-558396f9f293" />
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 AI-Click-Predictor/
@@ -46,7 +46,7 @@ AI-Click-Predictor/
 └── README.md                  # This file
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -92,7 +92,7 @@ Open `frontend/index.html` in your web browser:
 2. Click **"Predict Click Probability"**
 3. See the AI prediction with probability scores!
 
-## 📊 How It Works
+## How It Works
 
 ### Machine Learning Model
 
@@ -124,7 +124,7 @@ The application uses **Logistic Regression** trained on advertising data with th
 4. **Response**: Returns prediction + probabilities as JSON
 5. **Display**: Frontend shows results with animated bars
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Backend
 
@@ -142,7 +142,7 @@ The application uses **Logistic Regression** trained on advertising data with th
 - **Vanilla JavaScript** - API communication and DOM manipulation
 - **Google Fonts (Inter)** - Modern typography
 
-## 📡 API Documentation
+## API Documentation
 
 Once the backend is running, visit **http://127.0.0.1:8000/docs** for interactive API documentation (Swagger UI).
 
@@ -187,7 +187,7 @@ Make a prediction based on user data.
 }
 ```
 
-## 🎨 UI Features
+## UI Features
 
 - **Gradient Backgrounds**: Beautiful purple gradient (#667eea → #764ba2)
 - **Smooth Animations**: Fade-in, slide-up, and bounce effects
@@ -196,7 +196,7 @@ Make a prediction based on user data.
 - **Responsive Design**: Adapts to all screen sizes
 - **Error Handling**: User-friendly error messages
 
-## 🧪 Testing
+## Testing
 
 ### Test the Backend
 
@@ -222,18 +222,18 @@ Use these sample inputs:
 - Daily Internet Usage: 250
 - Gender: Female
 
-## 📝 Development Process
+## Development Process
 
 This project was built step-by-step:
 
-1. ✅ Trained Logistic Regression model on advertising data
-2. ✅ Created FastAPI backend with prediction endpoint
-3. ✅ Designed modern, responsive frontend
-4. ✅ Implemented API communication with fetch API
-5. ✅ Added animations and error handling
-6. ✅ Tested end-to-end functionality
+1. Trained Logistic Regression model on advertising data
+2. Created FastAPI backend with prediction endpoint
+3. Designed modern, responsive frontend
+4. Implemented API communication with fetch API
+5. Added animations and error handling
+6. Tested end-to-end functionality
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to:
 
@@ -241,11 +241,9 @@ Contributions are welcome! Feel free to:
 - Suggest new features
 - Submit pull requests
 
-## 👨‍💻 Author
+## Author
 
 **Divyansh Rawal**
 
 - GitHub ID : [GitHub](https://www.linkedin.com/in/divyanshmrawal)
 - LinkedIn ID : [LinkedIn](https://www.linkedin.com/in/divyanshmrawal)
-
-⭐ **If you found this project helpful, please give it a star!** ⭐
