@@ -1,10 +1,5 @@
 # Ad Click Predictor 
 
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1-green)
-![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-orange)
-![License](https://img.shields.io/badge/License-MIT-yellow)
-
 A web application that predicts whether a user will click on an advertisement based on their behavioral data. using Machine Learning (Logistic Regression) with responsive frontend.
 
 ## Features
