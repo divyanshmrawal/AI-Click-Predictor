@@ -125,18 +125,15 @@ The application uses **Logistic Regression** trained on advertising data with th
 
 - **Python 3.12** - Programming language
 - **FastAPI** - Modern web framework for APIs
-- **Uvicorn** - ASGI server
 - **scikit-learn** - Machine learning library
 - **pandas** - Data manipulation
-- **joblib** - Model serialization
 
 ### Frontend
 
 - **HTML** - Structure
 - **CSS** - Styling with gradients, animations, and glassmorphism
-- **Vanilla JavaScript** - API communication and DOM manipulation
-- **Google Fonts (Inter)** - Modern typography
-
+- ** JavaScript** - API communication and DOM manipulation
+- 
 ## API Documentation
 
 Once the backend is running, visit **http://127.0.0.1:8000/docs** for interactive API documentation (Swagger UI).
